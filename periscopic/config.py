@@ -37,6 +37,7 @@ class PeriscopicConfig:
     use_dummy_image_surface: bool = True
     pause_after_stage: bool = True
     stop_after_stage: int | None = None
+    only_stage: int | None = None
 
     @property
     def initial_radius(self) -> float:

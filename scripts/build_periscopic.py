@@ -27,6 +27,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pause-after-stage", action="store_true", default=True, help="Pause for Enter after each completed stage.")
     parser.add_argument("--no-pause-after-stage", action="store_false", dest="pause_after_stage", help="Run stages continuously without waiting for Enter.")
     parser.add_argument("--stop-after-stage", type=int, default=None, help="Stop after this stage index, e.g. 0 for Stage 0 only.")
+    parser.add_argument("--only-stage", type=int, default=None, help="Run only this stage index on the currently open system.")
     return parser.parse_args()
 
 
@@ -43,6 +44,7 @@ def main() -> None:
         final_thickness=args.final_thickness,
         pause_after_stage=args.pause_after_stage,
         stop_after_stage=args.stop_after_stage,
+        only_stage=args.only_stage,
     )
     connection = connect_opticstudio(standalone=args.standalone, instance=args.instance)
     run_workflow(connection.system, connection.zosapi, config)

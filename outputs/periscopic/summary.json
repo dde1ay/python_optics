@@ -1,0 +1,61 @@
+{
+  "config": {
+    "effective_focal_length": 200.0,
+    "lens_separation": 180.0,
+    "wavelength_um": 0.55,
+    "glass": "SF2",
+    "glass_fallbacks": [
+      "SF2",
+      "N-SF2"
+    ],
+    "refractive_index": 1.65174,
+    "selected_power": 0.0038,
+    "alternate_power": 0.0073,
+    "field_angles_deg": [
+      0.0,
+      10.0,
+      15.0
+    ],
+    "working_f_number": 10.0,
+    "initial_thickness": 15.0,
+    "final_thickness": 5.0,
+    "initial_object_distance": 800.0,
+    "pmag_target": -1.0,
+    "pmag_weight": 1.0,
+    "efly_weight": 1.0,
+    "field_flattening": "tangential",
+    "break_symmetry": "full",
+    "output_dir": "outputs\\periscopic",
+    "local_optimization_cycles": 10,
+    "local_optimization_algorithm": "DampedLeastSquares",
+    "number_of_cores": null,
+    "save_extension": ".zos",
+    "use_dummy_image_surface": true,
+    "pause_after_stage": false,
+    "stop_after_stage": null,
+    "only_stage": 5
+  },
+  "stages": [
+    {
+      "stage_name": "Stage 5: release_pickups",
+      "merit_value": 0.004699321893515628,
+      "saved_path": "D:\\Zemax\\ZOS-API Projects\\PythonZOSConnection\\outputs\\periscopic\\PERC105a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.001957997907332476,
+          "10.0": 0.001957997907332476,
+          "15.0": 0.001957997907332476
+        },
+        "monitor_operands": {
+          "EFLY": -474.34726266693553,
+          "SPHA": 3.363267239781187,
+          "COMA": -0.4086409557013827,
+          "ASTI": -1.5312454604426053,
+          "PETC": -0.0006945094962190234,
+          "DIST": -0.9567967284038822
+        },
+        "warnings": []
+      }
+    }
+  ]
+}
