@@ -1,0 +1,137 @@
+{
+  "config": {
+    "effective_focal_length": 200.0,
+    "lens_separation": 180.0,
+    "wavelength_um": 0.55,
+    "glass": "SF2",
+    "glass_fallbacks": [
+      "SF2",
+      "N-SF2"
+    ],
+    "refractive_index": 1.65174,
+    "selected_power": 0.0038,
+    "alternate_power": 0.0073,
+    "field_angles_deg": [
+      0.0,
+      10.0,
+      15.0
+    ],
+    "working_f_number": 10.0,
+    "initial_thickness": 15.0,
+    "final_thickness": 5.0,
+    "initial_object_distance": 800.0,
+    "pmag_target": -1.0,
+    "pmag_weight": 1.0,
+    "efly_weight": 1.0,
+    "field_flattening": null,
+    "break_symmetry": "none",
+    "output_dir": "outputs\\periscopic_smoke",
+    "local_optimization_cycles": 1,
+    "local_optimization_algorithm": "DampedLeastSquares",
+    "number_of_cores": null,
+    "save_extension": ".zos",
+    "use_dummy_image_surface": true
+  },
+  "stages": [
+    {
+      "stage_name": "Stage 0: build_initial_system",
+      "merit_value": 326.31134078936043,
+      "saved_path": "outputs\\periscopic_smoke\\PERC100a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.008014415860591484,
+          "10.0": 0.008014415860591484,
+          "15.0": 0.008014415860591484
+        },
+        "monitor_operands": {
+          "SPHA": 0.5145917030373011,
+          "COMA": -8.279609306896589,
+          "ASTI": 57.672131314689146,
+          "PETC": -0.0046012319686598415,
+          "DIST": 5.79741570039721
+        },
+        "warnings": []
+      }
+    },
+    {
+      "stage_name": "Stage 1: recover_target_efl",
+      "merit_value": 2.3419488570652902e-11,
+      "saved_path": "outputs\\periscopic_smoke\\PERC101a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.0,
+          "10.0": 0.0,
+          "15.0": 0.0
+        },
+        "monitor_operands": {
+          "SPHA": 9000000000.0,
+          "COMA": 9000000000.0,
+          "ASTI": 9000000000.0,
+          "PETC": -0.0046012319686598415,
+          "DIST": 9000000000.0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "stage_name": "Stage 2: unit_magnification",
+      "merit_value": 0.7071067811865476,
+      "saved_path": "outputs\\periscopic_smoke\\PERC102a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.0,
+          "10.0": 0.0,
+          "15.0": 0.0
+        },
+        "monitor_operands": {
+          "SPHA": 9000000000.0,
+          "COMA": 9000000000.0,
+          "ASTI": 9000000000.0,
+          "PETC": -0.0046012319686598415,
+          "DIST": 9000000000.0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "stage_name": "Stage 3: object_at_infinity",
+      "merit_value": 1.4210854715202004e-14,
+      "saved_path": "outputs\\periscopic_smoke\\PERC103a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.0,
+          "10.0": 0.0,
+          "15.0": 0.0
+        },
+        "monitor_operands": {
+          "SPHA": 9000000000.0,
+          "COMA": 9000000000.0,
+          "ASTI": 9000000000.0,
+          "PETC": -0.0046012319686598415,
+          "DIST": 9000000000.0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "stage_name": "Stage 4: thickness_and_dummy_surface",
+      "merit_value": 1.4210854715202004e-14,
+      "saved_path": "outputs\\periscopic_smoke\\PERC104a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.0,
+          "10.0": 0.0,
+          "15.0": 0.0
+        },
+        "monitor_operands": {
+          "SPHA": 9000000000.0,
+          "COMA": 9000000000.0,
+          "ASTI": 9000000000.0,
+          "PETC": -0.0046012319686598415,
+          "DIST": 9000000000.0
+        },
+        "warnings": []
+      }
+    }
+  ]
+}
