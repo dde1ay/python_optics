@@ -31,11 +31,32 @@
     "number_of_cores": null,
     "save_extension": ".zos",
     "use_dummy_image_surface": true,
-    "pause_after_stage": false,
+    "pause_after_stage": true,
     "stop_after_stage": null,
-    "only_stage": 5
+    "only_stage": 4
   },
   "stages": [
+    {
+      "stage_name": "Stage 4: thickness_and_dummy_surface",
+      "merit_value": 0.032903682873128066,
+      "saved_path": "D:\\Zemax\\ZOS-API Projects\\PythonZOSConnection\\outputs\\periscopic\\PERC104a.zos",
+      "analysis": {
+        "rms_spot_by_field": {
+          "0.0": 0.05132995365607744,
+          "10.0": 0.05132995365607744,
+          "15.0": 0.05132995365607744
+        },
+        "monitor_operands": {
+          "EFLY": 338.0930817625786,
+          "SPHA": 2.5408014391032503,
+          "COMA": 2.79271002574732,
+          "ASTI": -5.637369325587155,
+          "PETC": -0.003405688315368388,
+          "DIST": 0.28754822601400043
+        },
+        "warnings": []
+      }
+    },
     {
       "stage_name": "Stage 5: release_pickups",
       "merit_value": 0.004699321893515628,

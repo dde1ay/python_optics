@@ -59,12 +59,6 @@ def _write_summary(config: PeriscopicConfig, records: list[dict[str, Any]]) -> d
 
 
 def _after_stage(config: PeriscopicConfig, records: list[dict[str, Any]], stage_index: int) -> bool:
-    if config.only_stage is not None:
-        _write_summary(config, records)
-        if config.pause_after_stage:
-            input(f"\nStage {stage_index} complete. Press Enter to close the connection...")
-        print(f"Ran only Stage {stage_index}.")
-        return True
     if config.stop_after_stage is not None and stage_index >= config.stop_after_stage:
         _write_summary(config, records)
         print(f"Stopped after Stage {stage_index}.")
@@ -75,7 +69,7 @@ def _after_stage(config: PeriscopicConfig, records: list[dict[str, Any]], stage_
 
 
 def _should_run_stage(config: PeriscopicConfig, stage_index: int) -> bool:
-    return config.only_stage is None or config.only_stage == stage_index
+    return config.only_stage is None or stage_index >= config.only_stage
 
 
 def _set_all_pickups_variable(system: Any, layout: SurfaceLayout) -> None:
