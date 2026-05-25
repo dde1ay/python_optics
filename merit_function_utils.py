@@ -1,3 +1,9 @@
+"""Backward-compatible import surface for merit-function sampling utilities.
+
+The maintained implementation lives in ``periscopic.merit_function_utils``.
+This root-level module re-exports the public helpers for older scripts.
+"""
+
 from periscopic.merit_function_utils import (
     add_ring_arm_trcx_trcy_operands,
     generate_ring_arm_pupil_points,
